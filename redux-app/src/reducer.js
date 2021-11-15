@@ -1,7 +1,9 @@
 import { GET_USERS } from './constant';
 
 
-const defaultState = [];
+const defaultState = {
+  users: []
+};
 
 export const getUserReducer = (state = defaultState, action) => {
   switch (action.type) {
